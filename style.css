@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body{
+  background-color: hsla(0, 100%, 74%, 0.897) ;
+}
+
+main{
+  background-image: url(./images/bg-intro-mobile.png);
+  background-position: center;
+  background-size: auto;
+  min-height: 100vh;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem 1.5rem
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  color: #FFF;
+}
+
+.text-container h1{
+  font-size: 30px
+}
+
+.text-container p{
+  line-height: 160%;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 100%;
+}
+
+.random-text{
+  text-align: center;
+  background-color:#5D54A3;
+  color: #FFF;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 15px;
+  box-shadow: 0px 10px 4px 1px rgba(0,0,0,0.24);
+-webkit-box-shadow: 0px 10px 4px 1px rgba(0,0,0,0.24);
+-moz-box-shadow: 0px 10px 4px 1px rgba(0,0,0,0.24);
+max-width: 100%;
+}
+
+.random-text p span{
+  font-weight: 600;
+}
+.random-text p{
+  font-weight: 300;
+}
+.random-text p a{
+  color: #bfbae4;
+  text-decoration: none;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  padding: 1.5rem 1.5rem;
+  gap: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 10px 4px 1px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0px 10px 4px 1px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0px 10px 4px 1px rgba(0,0,0,0.24);
+  max-width: 100%;
+}
+
+.wrong{
+  display: none;
+  font-size: 10px;
+  color: red
+}
+
+#email, #password{
+  padding: .8rem 1rem; 
+  font-size: 16px;
+  font-weight: 500;
+  border-style: none;
+  border: solid 1px #CCC;
+  border-radius: 5px;
+}
+
+.login button{
+  background-color: hsl(154, 59%, 51%);
+  border-style: none;
+  padding: 1rem;
+  color: #FFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.login button:hover{
+  background-color: hsl(154, 55%, 44%);
+}
+
+.forgot{
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  color:hsl(246, 25%, 77%)
+}
+
+.forgot a{
+  text-decoration: none;
+  color:hsla(0, 100%, 74%, 0.897)
+}
+
+.wrong-user{
+  display: none;
+}
+
+
+
+@media screen and (min-width:1333px){
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 8rem;
+  }
+
+  .text-container{
+    text-align: left;
+    justify-content: flex-start;
+  align-items: flex-start;  }
+  .text-container h1{
+    font-size: 55px;
+  }
+  .text-container p{
+    font-size: 18px;
+  }
+  .login{
+    padding: 3rem;
+  } 
+  #email, #password{
+    padding-right: 6rem;
+  }
+}
